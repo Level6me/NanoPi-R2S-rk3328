@@ -8,19 +8,17 @@
 
 name: NanoPi-R2S-全插件
 
-#on:
-#  repository_dispatch:
-#  workflow_dispatch:
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  watch:
+    types: started
+    
   #schedule:
     #- cron: 0 17 * * *
 #   watch:
 #     types: started
-on:
-#  schedule:
-#    - cron: 5 6 * * 0
-  watch:
-    types: started
-    
+
     
 env:
   REPO_URL: https://github.com/DHDAXCW/lede-rockchip
