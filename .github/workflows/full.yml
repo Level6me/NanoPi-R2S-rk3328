@@ -14,7 +14,7 @@ on:
   #schedule:
     #- cron: 0 17 * * *
   # watch:
-  #   types: started
+     types: started
 
 env:
   REPO_URL: https://github.com/DHDAXCW/lede-rockchip
