@@ -9,18 +9,12 @@
 name: NanoPi-R2S-全插件
 
 on:
-  deployment:
   repository_dispatch:
-  push:
-    paths:
-    - 'user/**'
-  # # For 'schedule', see examples in: https://crontab.guru/examples.html
-  # #     e.g. every sunday midnight: '0 0 * * 0' every midnight: '0 0 * * *'
-  # schedule:
-  #   - cron: '0 0 * * 0'
-  watch:
-    types: [started]
-
+  workflow_dispatch:
+  #schedule:
+    #- cron: 0 17 * * *
+  # watch:
+  #   types: started
     
 env:
   REPO_URL: https://github.com/DHDAXCW/lede-rockchip
